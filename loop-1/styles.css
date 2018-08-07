@@ -1,0 +1,65 @@
+/* Typography */
+body {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #BFBAB4;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 700;
+    color: #5572D6;
+}
+
+sup {
+    vertical-align: top;
+}
+
+.price {
+    font-weight: 400;
+    color: #5572D6;
+}
+
+.amount {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+/* Layout */
+#price-box {
+    display: inline-flex;
+    padding: 5%;
+}
+
+.left-column,
+.center-column,
+.right-column {
+    max-width: 30%;
+}
+
+.left-column,
+.center-column {
+    margin-right: 10%;
+}
+
+/* Images */
+img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    height: 75px;
+}
+
+/* Decoration */
+body {
+    background-color: #85A5D4;
+}
+
+#price-box {
+    margin: 10%;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px #708BB6;
+}
