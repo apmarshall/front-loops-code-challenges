@@ -10,8 +10,9 @@ body {
 h3 {
     text-transform: uppercase;
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 500;
     color: #5572D6;
+    letter-spacing: 4px;
 }
 
 sup {
@@ -25,24 +26,33 @@ sup {
 
 .amount {
     font-size: 3em;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 /* Layout */
 #price-box {
     display: inline-flex;
-    padding: 5%;
+    padding: 2%;
 }
 
 .left-column,
 .center-column,
 .right-column {
-    max-width: 30%;
+    max-width: 22%;
+    padding: 5%;
 }
 
-.left-column,
-.center-column {
-    margin-right: 10%;
+/* Mobile Layout */
+@media only screen and (max-width: 900px) {
+    #price-box {
+        display: inline-block;
+    }
+
+    .left-column,
+    .center-column,
+    .right-column {
+        max-width: 100%;
+    }
 }
 
 /* Images */
@@ -62,4 +72,10 @@ body {
     margin: 10%;
     background-color: #ffffff;
     box-shadow: 5px 5px 5px #708BB6;
+}
+
+.left-column:hover,
+.center-column:hover,
+.right-column:hover {
+    background-color: #f3f3f3;
 }
